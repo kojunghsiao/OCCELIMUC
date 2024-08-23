@@ -14,6 +14,7 @@
 ### 1.1 train_index, val_index = folds[6]
 ### 1.2 checkpoint = ModelCheckpoint('/content/drive/My Drive/LIMUC/Temp/RBSLF_best_model_fold_7.h5', monitor='val_loss', save_best_only=True, mode='min')
 ### 1.3 load the best weights and evaluate the model on the test set. model.load_weights('/content/drive/My Drive/LIMUC/Temp/RBSLF_best_model_fold_7.h5')
+### 1.4 If you would like to run without SE or Spatial attention layer, you need to diasable the class SqueezeExcitationLayer(Layer), or class SpatialAttentionLayer(Layer), and remove them from the def build_efficientnet_model(num_classes)
 
 
 ## 2. Classification.ipynb
